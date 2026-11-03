@@ -1,0 +1,15 @@
+# Core (rule-based baseline, offline test cases)
+pydantic>=2.5
+pyyaml>=6
+python-docx>=1.1
+beautifulsoup4>=4.12   # HTML scraping
+pypdf>=4.0             # PDF text extraction
+reportlab>=4.0         # PDF reports (and building the test-case PDFs)
+# AI agents + live web (real organisations)
+anthropic>=0.40        # Claude (or use openai)
+openai>=1.40
+httpx>=0.27            # downloading pages
+ddgs>=9.0              # DuckDuckGo search, no key needed (Tavily is used instead if TAVILY_API_KEY is set)
+# Tests
+pytest>=8
+# Optional: review screen -> pip install streamlit pandas

@@ -1,0 +1,121 @@
+# =============================================================================
+# A5 Due Diligence Agent: run settings
+# -----------------------------------------------------------------------------
+# PROVENANCE: water_care_staff. Settings chosen by people at Water Care (Team Glacier for the demo).
+# This is the ONLY place where you choose which implementation runs each step.
+# Swapping "simweb" for "live", or "heuristic" for "llm", changes nothing else
+# in the code: every implementation returns the same data contract.
+# =============================================================================
+
+paths:
+  manual_dir: data/manual          # Put the unzipped "A5. Due diligence" files here (reference only).
+  cases_dir: data/cases            # One folder per fictional company (see data/cases/README.md).
+  answer_keys_dir: data/answer_keys
+  results_dir: results             # Each run writes results/<case_id>/01_... to 06_...
+  criteria_file: config/criteria.json
+  sources_file: config/sources.json  # Known domains -> publisher and source type.
+
+providers:
+  # WHO DOES EACH JOB. Default = the multi-agent AI workflow.
+  # Run with --rules to use the rule-based baseline instead (no AI, no API key, same outputs).
+
+  # Where pages come from.
+  #   auto       = the offline test web for the fictional cases (they ship with data/cases/<case>/web),
+  #                the live web for real organisations (no web folder).
+  #   simweb     = always the offline test web.   live / tavily / duckduckgo = always the live web.
+  search: auto
+  #   live_search: which live engine. auto = Tavily if TAVILY_API_KEY is set, otherwise DuckDuckGo (no key).
+  live_search: auto
+
+  # AGENT 1, Researcher: after the fixed guide 1.3 searches, who decides what to look at next?
+  #   llm       = an AI agent with tools (search, open page, finish) working in its own loop.
+  #   heuristic = rules (follow links to regulator/court PDFs, search named buyers). Baseline.
+  #   none      = no follow-up (the fixed protocol only).
+  lead_finder: llm
+
+  # AGENT 2, Analyst: reads each source and labels each issue (allegation, investigation, finding...).
+  #   llm | heuristic (keyword rules)
+  extractor: llm
+
+  # AGENT 3, Tracer: for serious issues with an open end, traces back to the origin and forward to the
+  # outcome (ruling, fine, settlement...). Runs after the analyst, inside stage 3.   llm | none
+  tracer: llm
+
+  # AGENT 4, Judge: answers Q1-Q6, attacking from two sides.   llm | heuristic (the manual's rules in code)
+  judge: llm
+
+  # AGENT 5, Challenger: argues against each of the judge's calls; the judge must reply.   llm | none
+  challenger: llm
+
+  # Scoring (guide 1.4) and routing (guide 3.2) are ALWAYS fixed code, never an AI.
+
+llm:
+  provider: anthropic              # "anthropic" (ANTHROPIC_API_KEY) or "openai" (OPENAI_API_KEY)
+  models:                          # One model per agent role. Check your provider's docs for current names.
+    anthropic:
+      default: claude-sonnet-5-5
+      analyst: claude-haiku-5-5     # Reads every source: a faster, cheaper model is enough.
+    openai:
+      default: gpt-5
+      analyst: gpt-5-mini
+  max_tokens: 4000
+  parallel_calls: 6                # How many sources the analyst reads at once.
+  analyst_max_chars: 15000         # Longest part of one source the analyst reads (characters).
+  cache_dir: results/_llm_cache    # Every response is cached: re-runs are free and identical.
+
+tracer:
+  max_issues: 3                    # Most serious open issues traced per case.
+  max_turns: 10                    # Per issue.
+  max_searches: 4                  # Per issue.
+  max_pages: 5                     # Per issue.
+
+retrieval:
+  # Passage retrieval inside documents (BM25). Used to shorten long documents for the analyst
+  # and by the agents' search_found_pages tool.
+  chunk_chars: 1200
+  chunk_overlap: 200
+  passages_for_tool: 5
+
+agent:
+  # AI researcher budget (lead_finder: llm). Set here, not by the model.
+  max_turns: 20                    # Model turns in the tool loop.
+  max_searches: 12                 # Extra searches it may run.
+  max_pages: 15                    # Extra pages it may open.
+  page_chars_for_agent: 3500       # How much of each opened page the researcher sees.
+  # Rule-based baseline budget (lead_finder: heuristic).
+  max_rounds: 3                    # Follow-up rounds after the fixed searches.
+  max_actions_per_round: 8
+
+search:
+  max_results_per_query: 10        # Offline test web: results per standard search.
+  live_results_per_query: 8        # Live web: results requested per standard search.
+  fetch_per_query: 3               # Live web: top relevant results opened per standard search.
+  max_documents_from_standard_searches: 70   # Live web: cap on pages from the 33 standard searches.
+  agent_results_per_search: 8      # Results shown to the AI researcher per search.
+  fetch_timeout_seconds: 20
+  respect_robots_txt: true
+  duckduckgo_seconds_between_searches: 1.5
+
+policy_switches:
+  # The manual contradicts itself on these two points. Ask the WaterAid mentor.
+  # Policy 0.0 section 3.3 excludes fossil fuels; guides 1.1 and 4.1 do not list them.
+  fossil_fuels_excluded: true
+  # Template a lists alcohol as a risk area; template b does not.
+  alcohol_is_risk_area: true
+
+# Fixed date so results are reproducible in the demo. Set to null to use today.
+assessment_date: "2026-10-17"
+
+# -----------------------------------------------------------------------------
+# Effort and cost model used by scripts/effort_estimate.py.
+# The baseline comes from the manual; values marked ASSUMPTION are the team's estimates.
+# -----------------------------------------------------------------------------
+effort:
+  manual_baseline_minutes: [60, 120]   # Guide 1.3: an initial desk-based check takes one to two hours.
+  result_pages_per_search: 4           # Guide 1.3: first two pages of the "All" and "News" tabs.
+  reading_words_per_minute: 200        # ASSUMPTION: careful reading speed of the report.
+  minutes_per_source_check: 5          # ASSUMPTION: open one cited source and confirm the quote.
+  minutes_overhead_per_case: 5         # ASSUMPTION: open the report, record the decision.
+  # Running costs. Leave null until looked up on the providers' current price pages.
+  price_per_search_usd: null           # e.g. Tavily price per search credit
+  price_per_llm_call_usd: null         # average cost of one LLM call with your chosen model

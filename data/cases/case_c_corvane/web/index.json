@@ -1,0 +1,78 @@
+{
+  "_about": "Simulated web for this fictional case. 'indexed': false pages can only be reached by following links. 'origin' says who published each page: partner_organisation or third_party_public_source.",
+  "built": "2026-10-26",
+  "pages": [
+    {
+      "id": "C1",
+      "url": "https://corvane-group.example/who-we-are",
+      "file": "corvane-group.example/who-we-are.html",
+      "content_type": "text/html",
+      "indexed": true,
+      "origin": "partner_organisation"
+    },
+    {
+      "id": "C2",
+      "url": "https://andean-business-review.example/2024/02/19/corvane-to-sell-exploration-arm",
+      "file": "andean-business-review.example/2024/02/19/corvane-to-sell-exploration-arm.html",
+      "content_type": "text/html",
+      "indexed": true,
+      "origin": "third_party_public_source"
+    },
+    {
+      "id": "C3",
+      "url": "https://oefa-notices.example/resoluciones/2025/rd-0457-2025.pdf",
+      "file": "oefa-notices.example/resoluciones/2025/rd-0457-2025.pdf",
+      "content_type": "application/pdf",
+      "indexed": false,
+      "origin": "third_party_public_source"
+    },
+    {
+      "id": "C4",
+      "url": "https://aguaviva-collective.example/2025/09/huarani-families-water",
+      "file": "aguaviva-collective.example/2025/09/huarani-families-water.html",
+      "content_type": "text/html",
+      "indexed": true,
+      "origin": "third_party_public_source"
+    },
+    {
+      "id": "C5",
+      "url": "https://corvane-group.example/news/huarani-statement",
+      "file": "corvane-group.example/news/huarani-statement.html",
+      "content_type": "text/html",
+      "indexed": true,
+      "origin": "partner_organisation"
+    },
+    {
+      "id": "C6",
+      "url": "https://lima-economic-daily.example/2025/10/21/altiplano-corvane-deal-awaits-approval",
+      "file": "lima-economic-daily.example/2025/10/21/altiplano-corvane-deal-awaits-approval.html",
+      "content_type": "text/html",
+      "indexed": true,
+      "origin": "third_party_public_source"
+    },
+    {
+      "id": "C7",
+      "url": "https://halifax-herald.example/2026/01/08/dental-clinic-billing-fraud-fine",
+      "file": "halifax-herald.example/2026/01/08/dental-clinic-billing-fraud-fine.html",
+      "content_type": "text/html",
+      "indexed": true,
+      "origin": "third_party_public_source"
+    },
+    {
+      "id": "C8",
+      "url": "https://corvane-group.example/reports/2023-annual-review.pdf",
+      "file": "corvane-group.example/reports/2023-annual-review.pdf",
+      "content_type": "application/pdf",
+      "indexed": false,
+      "origin": "partner_organisation"
+    },
+    {
+      "id": "C9",
+      "url": "https://altiplano-resources.example/investors/2025-11-04-update",
+      "file": "altiplano-resources.example/investors/2025-11-04-update.html",
+      "content_type": "text/html",
+      "indexed": false,
+      "origin": "third_party_public_source"
+    }
+  ]
+}

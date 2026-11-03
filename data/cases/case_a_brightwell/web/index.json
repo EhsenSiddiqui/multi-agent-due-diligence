@@ -1,0 +1,30 @@
+{
+  "_about": "Simulated web for this fictional case. 'indexed': false pages can only be reached by following links. 'origin' says who published each page: partner_organisation or third_party_public_source.",
+  "built": "2026-10-26",
+  "pages": [
+    {
+      "id": "A1",
+      "url": "https://brightwell-supplies.example/about",
+      "file": "brightwell-supplies.example/about.html",
+      "content_type": "text/html",
+      "indexed": true,
+      "origin": "partner_organisation"
+    },
+    {
+      "id": "A2",
+      "url": "https://mississauga-local.example/news/2025/04/22/brightwell-community-award",
+      "file": "mississauga-local.example/news/2025/04/22/brightwell-community-award.html",
+      "content_type": "text/html",
+      "indexed": true,
+      "origin": "third_party_public_source"
+    },
+    {
+      "id": "A3",
+      "url": "https://brightwell-supplies.example/docs/supplier-code-of-conduct.pdf",
+      "file": "brightwell-supplies.example/docs/supplier-code-of-conduct.pdf",
+      "content_type": "application/pdf",
+      "indexed": false,
+      "origin": "partner_organisation"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "_about": "Simulated web for this fictional case. 'indexed': false pages can only be reached by following links. 'origin' says who published each page: partner_organisation or third_party_public_source.",
+  "built": "2026-10-26",
+  "pages": [
+    {
+      "id": "B1",
+      "url": "https://northstream-apparel.example/our-story",
+      "file": "northstream-apparel.example/our-story.html",
+      "content_type": "text/html",
+      "indexed": true,
+      "origin": "partner_organisation"
+    },
+    {
+      "id": "B2",
+      "url": "https://toronto-business-daily.example/2019/03/14/northstream-apparel-fined",
+      "file": "toronto-business-daily.example/2019/03/14/northstream-apparel-fined.html",
+      "content_type": "text/html",
+      "indexed": true,
+      "origin": "third_party_public_source"
+    },
+    {
+      "id": "B3",
+      "url": "https://ontario-courts.example/bulletins/2019/0311-northstream.pdf",
+      "file": "ontario-courts.example/bulletins/2019/0311-northstream.pdf",
+      "content_type": "application/pdf",
+      "indexed": false,
+      "origin": "third_party_public_source"
+    },
+    {
+      "id": "B4",
+      "url": "https://northstream-apparel.example/news/2019-safety-statement",
+      "file": "northstream-apparel.example/news/2019-safety-statement.html",
+      "content_type": "text/html",
+      "indexed": true,
+      "origin": "partner_organisation"
+    },
+    {
+      "id": "B5",
+      "url": "https://cleanthreads-campaign.example/blog/brands-still-profiting-from-poverty-pay",
+      "file": "cleanthreads-campaign.example/blog/brands-still-profiting-from-poverty-pay.html",
+      "content_type": "text/html",
+      "indexed": true,
+      "origin": "third_party_public_source"
+    },
+    {
+      "id": "B6",
+      "url": "https://gear-review.example/2024/10/northstream-recycled-shell-jacket",
+      "file": "gear-review.example/2024/10/northstream-recycled-shell-jacket.html",
+      "content_type": "text/html",
+      "indexed": true,
+      "origin": "third_party_public_source"
+    }
+  ]
+}

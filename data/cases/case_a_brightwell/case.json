@@ -1,0 +1,28 @@
+{
+  "case_id": "case_a_brightwell",
+  "organisation_name": "Brightwell Office Supplies Ltd.",
+  "aliases": [
+    "Brightwell"
+  ],
+  "relationship_type": "supplier",
+  "annual_value_usd": 150000,
+  "presence": "local",
+  "brand_affiliation": false,
+  "declared_sectors": [
+    "office supplies"
+  ],
+  "countries_of_operation": [
+    "Canada"
+  ],
+  "notes": "FICTIONAL. Proposed supplier of office stationery for the Toronto office.",
+  "fictional": true,
+  "websites": [
+    "brightwell-supplies.example"
+  ],
+  "provenance": {
+    "origin": "water_care_staff",
+    "prepared_by": "Relationship lead (fictional demo)",
+    "human_reviewed": true,
+    "note": "Case details entered by Water Care staff about the proposed partnership."
+  }
+}

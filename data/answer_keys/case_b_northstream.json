@@ -1,0 +1,32 @@
+{
+  "provenance": {
+    "origin": "water_care_staff",
+    "prepared_by": "Team Glacier (test designers)",
+    "human_reviewed": true,
+    "note": "Expected results written by people BEFORE running the tool. Used only for testing."
+  },
+  "_why": "2019 safety fine (finding, within 10 years, resolved) + supply chain in Bangladesh and Vietnam (not on the case card) + a weak, uncorroborated NGO wage allegation.",
+  "expected_risk_calls": {
+    "Q1": "no",
+    "Q2": "no",
+    "Q3": "yes",
+    "Q4": "yes",
+    "Q5": "unclear",
+    "Q6": "no"
+  },
+  "expected_risk_level": "medium",
+  "expected_rejected_doc_ids": [],
+  "must_have_status": {
+    "B3": "finding",
+    "B4": "response",
+    "B5": "allegation"
+  },
+  "fictional": true,
+  "must_find_doc_ids": [
+    "B3"
+  ],
+  "expected_issue_status": {
+    "B3": "fine"
+  },
+  "_fields": "expected_risk_calls: the right call per question. expected_rejected_doc_ids: sources that must be set aside. must_have_status: the right label for key sources. must_find_doc_ids: sources the research must reach (retrieval recall). expected_issue_status: the current status of the issue that contains this source."
+}

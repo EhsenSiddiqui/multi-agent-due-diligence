@@ -1,0 +1,34 @@
+{
+  "case_id": "case_c_corvane",
+  "organisation_name": "Corvane Group Holdings Ltd.",
+  "aliases": [
+    "Corvane Group",
+    "Corvane",
+    "Corvane Engineering Ltd.",
+    "Corvane Infra Chile SpA",
+    "Corvane Minerals S.A."
+  ],
+  "relationship_type": "corporate_donor",
+  "annual_value_usd": 250000,
+  "presence": "multinational",
+  "brand_affiliation": true,
+  "declared_sectors": [
+    "engineering services",
+    "infrastructure"
+  ],
+  "countries_of_operation": [
+    "Canada",
+    "Chile"
+  ],
+  "notes": "FICTIONAL. Proposed three-year co-branded partnership for rural water points. Staff believe the group sold its mining unit.",
+  "fictional": true,
+  "websites": [
+    "corvane-group.example"
+  ],
+  "provenance": {
+    "origin": "water_care_staff",
+    "prepared_by": "Relationship lead (fictional demo)",
+    "human_reviewed": true,
+    "note": "Case details entered by Water Care staff about the proposed partnership."
+  }
+}

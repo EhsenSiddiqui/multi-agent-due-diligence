@@ -1,0 +1,42 @@
+{
+  "case_id": "case_d_barrick",
+  "organisation_name": "Barrick Mining Corporation",
+  "search_name": "Barrick",
+  "aliases": [
+    "Barrick Gold Corporation",
+    "Barrick Gold Corp",
+    "Barrick Gold",
+    "Barrick Mining Corp",
+    "Barrick Mining",
+    "Barrick",
+    "Nevada Gold Mines",
+    "North Mara Gold Mine Limited",
+    "Twiga Minerals Corporation",
+    "Barrick Niugini Limited",
+    "Reko Diq Mining Company",
+    "Kibali Goldmines",
+    "Acacia Mining"
+  ],
+  "relationship_type": "corporate_donor",
+  "annual_value_usd": 100000,
+  "presence": "multinational",
+  "brand_affiliation": true,
+  "declared_sectors": [
+    "gold and copper mining"
+  ],
+  "countries_of_operation": [
+    "Canada",
+    "United States"
+  ],
+  "notes": "REAL ORGANISATION. Relationship details (type, value, brand use) are PLACEHOLDERS for the hackathon: replace them with the organisers' scenario. Renamed from Barrick Gold Corporation in May 2025.",
+  "fictional": false,
+  "websites": [
+    "barrick.com"
+  ],
+  "provenance": {
+    "origin": "water_care_staff",
+    "prepared_by": "Team Glacier (hackathon placeholder case card)",
+    "human_reviewed": true,
+    "note": "Organisation identity entered by the team; relationship details are placeholders."
+  }
+}

@@ -1,0 +1,487 @@
+{
+  "_provenance": {
+    "origin": "water_care_staff",
+    "prepared_by": "Team Glacier for Water Care",
+    "note": "Rules transcribed from the Water Care manual by the team. Values marked DEMO ASSUMPTION need confirming by WaterAid."
+  },
+  "_about": "Water Care ethical-check rules as data. Every value below cites the manual file it comes from (data/manual). DEMO ASSUMPTIONS are labelled. Change rules here, not in code.",
+  "_version": "1.0",
+  "standards": {
+    "S1": "Ethical Standard 1 (policy 0.0 s2): no funds from organisations whose activities create or uphold barriers to safe water, sanitation and hygiene, unless overwhelmingly net positive.",
+    "S2": "Ethical Standard 2 (policy 0.0 s2): no relationship that poses a reputational risk likely to harm the Water Care mission."
+  },
+  "lookback_years": 10,
+  "_lookback_source": "Template b, question 4: 'in the last 10 years'.",
+  "questions": [
+    {
+      "id": "Q1",
+      "text": "Parent company and direct subsidiaries: are there activities in arms, gambling, pornography, tobacco or extractives?",
+      "risk_rule": "Guide 1.4: any 'yes' is a potential risk.",
+      "standards": [
+        "S1",
+        "S2"
+      ],
+      "evidence_topics": [
+        "sector"
+      ]
+    },
+    {
+      "id": "Q2",
+      "text": "How do they ensure business activities don't have a negative impact on community access to WASH?",
+      "risk_rule": "Guide 1.4: assess whether barriers to WASH are created or upheld.",
+      "standards": [
+        "S1"
+      ],
+      "evidence_topics": [
+        "water",
+        "environment"
+      ]
+    },
+    {
+      "id": "Q3",
+      "text": "Nature, scale and geographical extent of international operations, including supply chain.",
+      "risk_rule": "Guide 1.4: operations or supply chain in low- or middle-income countries is a potential risk.",
+      "standards": [
+        "S1",
+        "S2"
+      ],
+      "evidence_topics": [
+        "operations"
+      ]
+    },
+    {
+      "id": "Q4",
+      "text": "Has the organisation been the subject of criminal or regulatory investigation in the last 10 years?",
+      "risk_rule": "Guide 1.4: 'yes' must be considered a potential risk.",
+      "standards": [
+        "S2"
+      ],
+      "evidence_topics": [
+        "regulatory"
+      ]
+    },
+    {
+      "id": "Q5",
+      "text": "Are there media or other campaigns or allegations against them (journalists, NGOs, social media)?",
+      "risk_rule": "Guide 1.4: assess the campaign; minor, resolved or irrelevant ones may not be a risk.",
+      "standards": [
+        "S2"
+      ],
+      "evidence_topics": [
+        "allegation"
+      ]
+    },
+    {
+      "id": "Q6",
+      "text": "Anything else relevant to Water Care's mission, credibility or reputation.",
+      "risk_rule": "Guide 1.4: assess against the two standards.",
+      "standards": [
+        "S1",
+        "S2"
+      ],
+      "evidence_topics": [
+        "other"
+      ]
+    }
+  ],
+  "search_terms": [
+    {
+      "term": "Bribe",
+      "patterns": [
+        "bribe"
+      ]
+    },
+    {
+      "term": "Bribery",
+      "patterns": [
+        "bribery"
+      ]
+    },
+    {
+      "term": "Corrupt",
+      "patterns": [
+        "corrupt"
+      ]
+    },
+    {
+      "term": "Scandal",
+      "patterns": [
+        "scandal"
+      ]
+    },
+    {
+      "term": "Fraud",
+      "patterns": [
+        "fraud"
+      ]
+    },
+    {
+      "term": "Risk",
+      "patterns": [
+        "risk"
+      ]
+    },
+    {
+      "term": "Unfair",
+      "patterns": [
+        "unfair"
+      ]
+    },
+    {
+      "term": "Criminal",
+      "patterns": [
+        "criminal"
+      ]
+    },
+    {
+      "term": "Convict",
+      "patterns": [
+        "convict"
+      ]
+    },
+    {
+      "term": "Investigation",
+      "patterns": [
+        "investigation"
+      ]
+    },
+    {
+      "term": "Investigate",
+      "patterns": [
+        "investigat"
+      ]
+    },
+    {
+      "term": "Money laundering",
+      "patterns": [
+        "money laundering"
+      ]
+    },
+    {
+      "term": "Launder",
+      "patterns": [
+        "launder"
+      ]
+    },
+    {
+      "term": "Embezzlement",
+      "patterns": [
+        "embezzl"
+      ]
+    },
+    {
+      "term": "Sacked",
+      "patterns": [
+        "sacked",
+        "dismissed"
+      ]
+    },
+    {
+      "term": "Crook",
+      "patterns": [
+        "crook"
+      ]
+    },
+    {
+      "term": "Pornography",
+      "patterns": [
+        "pornograph"
+      ]
+    },
+    {
+      "term": "Gambling",
+      "patterns": [
+        "gambling",
+        "casino",
+        "betting"
+      ]
+    },
+    {
+      "term": "Extractive",
+      "patterns": [
+        "extractive",
+        "mining",
+        "mineral",
+        "quarry"
+      ]
+    },
+    {
+      "term": "Tobacco",
+      "patterns": [
+        "tobacco",
+        "cigarette"
+      ]
+    },
+    {
+      "term": "Arms",
+      "patterns": [
+        "arms manufactur",
+        "weapon",
+        "munition"
+      ]
+    },
+    {
+      "term": "Defence",
+      "patterns": [
+        "defence",
+        "defense"
+      ]
+    },
+    {
+      "term": "Military",
+      "patterns": [
+        "military"
+      ]
+    },
+    {
+      "term": "Political",
+      "patterns": [
+        "political"
+      ]
+    },
+    {
+      "term": "Terrorism",
+      "patterns": [
+        "terroris"
+      ]
+    },
+    {
+      "term": "Controversial",
+      "patterns": [
+        "controvers"
+      ]
+    },
+    {
+      "term": "Green wash",
+      "patterns": [
+        "greenwash",
+        "green wash"
+      ]
+    },
+    {
+      "term": "Pollute / Polluter",
+      "patterns": [
+        "pollut",
+        "contaminat",
+        "discharge",
+        "spill"
+      ]
+    },
+    {
+      "term": "Settlement",
+      "patterns": [
+        "settlement",
+        "settled"
+      ]
+    },
+    {
+      "term": "Abuse",
+      "patterns": [
+        "abuse"
+      ]
+    },
+    {
+      "term": "Workers",
+      "patterns": [
+        "worker",
+        "labour",
+        "labor"
+      ]
+    },
+    {
+      "term": "Oil and gas",
+      "patterns": [
+        "oil and gas",
+        "petroleum",
+        "crude"
+      ]
+    }
+  ],
+  "_search_terms_source": "Template b 'Key search terms' (32 terms). 'patterns' = DEMO ASSUMPTION for offline matching.",
+  "sectors": {
+    "arms": {
+      "label": "Arms and munitions",
+      "keywords": [
+        "arms manufactur",
+        "weapon",
+        "munition",
+        "defence contractor"
+      ],
+      "class": "excluded"
+    },
+    "pornography": {
+      "label": "Pornography",
+      "keywords": [
+        "pornograph",
+        "adult entertainment"
+      ],
+      "class": "excluded"
+    },
+    "tobacco": {
+      "label": "Tobacco",
+      "keywords": [
+        "tobacco",
+        "cigarette"
+      ],
+      "class": "excluded"
+    },
+    "fossil_fuels": {
+      "label": "Fossil fuels (oil, gas, coal)",
+      "keywords": [
+        "oil and gas",
+        "petroleum",
+        "coal mining",
+        "crude oil"
+      ],
+      "class": "excluded_if_switch",
+      "switch": "fossil_fuels_excluded"
+    },
+    "gambling": {
+      "label": "Gambling",
+      "keywords": [
+        "gambling",
+        "casino",
+        "betting"
+      ],
+      "class": "high_risk"
+    },
+    "extractives": {
+      "label": "Extractives",
+      "keywords": [
+        "mining",
+        "extractive",
+        "mineral exploration",
+        "quarry",
+        "minerales"
+      ],
+      "class": "high_risk"
+    },
+    "alcohol": {
+      "label": "Alcohol",
+      "keywords": [
+        "brewery",
+        "distiller",
+        "alcohol"
+      ],
+      "class": "high_risk_if_switch",
+      "switch": "alcohol_is_risk_area"
+    }
+  },
+  "_sectors_source": "Excluded: policy 0.0 s3.3 and guide 4.1. High-risk: guide 1.1. Keywords = DEMO ASSUMPTION.",
+  "entry_criteria": {
+    "_source": "Guide 1.1 (simplified). Values in US$ per financial year.",
+    "corporate_donor": {
+      "threshold_usd": 35000,
+      "also_if_national_or_brand": true
+    },
+    "philanthropic_donor": {
+      "threshold_usd": 35000,
+      "also_if_national_or_brand": false
+    },
+    "trust_foundation": {
+      "threshold_usd": 130000,
+      "also_if_national_or_brand": false
+    },
+    "institutional_donor": {
+      "threshold_usd": 0,
+      "also_if_national_or_brand": false
+    },
+    "public_figure": {
+      "threshold_usd": 0,
+      "also_if_national_or_brand": false
+    },
+    "corporate_gift_in_kind": {
+      "threshold_usd": 35000,
+      "also_if_national_or_brand": true
+    },
+    "supplier": {
+      "threshold_usd": 130000,
+      "also_if_national_or_brand": false
+    },
+    "programme_partner": {
+      "threshold_usd": 130000,
+      "also_if_national_or_brand": false
+    }
+  },
+  "low_middle_income_countries": [
+    "Afghanistan",
+    "Bangladesh",
+    "Benin",
+    "Bolivia",
+    "Brazil",
+    "Burkina Faso",
+    "Cambodia",
+    "Cameroon",
+    "China",
+    "Colombia",
+    "Congo",
+    "Ecuador",
+    "Egypt",
+    "Ethiopia",
+    "Ghana",
+    "Guatemala",
+    "Haiti",
+    "Honduras",
+    "India",
+    "Indonesia",
+    "Kenya",
+    "Liberia",
+    "Madagascar",
+    "Malawi",
+    "Mali",
+    "Mexico",
+    "Mozambique",
+    "Myanmar",
+    "Nepal",
+    "Nicaragua",
+    "Niger",
+    "Nigeria",
+    "Pakistan",
+    "Peru",
+    "Philippines",
+    "Rwanda",
+    "Senegal",
+    "Sierra Leone",
+    "South Africa",
+    "Sri Lanka",
+    "Tanzania",
+    "Timor-Leste",
+    "Turkey",
+    "Uganda",
+    "Vietnam",
+    "Zambia",
+    "Zimbabwe"
+  ],
+  "_lmic_source": "DEMO ASSUMPTION: a partial list in the spirit of World Bank low- and middle-income groups. Replace with the full official list.",
+  "reliability_by_source_type": {
+    "regulator": "high",
+    "court": "high",
+    "official_filing": "high",
+    "annual_report": "medium",
+    "company_website": "medium",
+    "company_statement": "medium",
+    "news": "medium",
+    "ngo": "low",
+    "blog": "low",
+    "social_media": "low",
+    "third_party_company": "medium",
+    "unknown": "low"
+  },
+  "_reliability_source": "DEMO ASSUMPTION, answers mentor question 'what makes a source credible?'. Confirm with WaterAid.",
+  "routing": {
+    "_source": "Guides 1.4 and 3.2 (within one country programme / member).",
+    "low": {
+      "next_step": "Relationship lead confirms the desk research; the relevant decision maker signs off (template c section 3).",
+      "decision_maker": "Team lead, manager or director (Country Director in a country programme)"
+    },
+    "medium": {
+      "next_step": "Request a full ethical check (guide 2.1), then decision using template e.",
+      "decision_maker": "Function Director or Regional Director"
+    },
+    "high": {
+      "next_step": "Director decides now: drop the relationship, or request a full ethical check.",
+      "decision_maker": "Function Director or Regional Director (may escalate to the Chief Executive)"
+    },
+    "escalation": "Escalate if high risk, complex or contentious, or if another member or country programme flags a significant impact: Director -> Chief Executive (may seek Board input) -> Global Executive (consensus) -> Federation Board (final). High-risk decisions are reported to the Federation Board."
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "provenance": {
+    "origin": "water_care_staff",
+    "prepared_by": "Team Glacier (test designers)",
+    "human_reviewed": true,
+    "note": "Expected results written by people BEFORE running the tool. Used only for testing."
+  },
+  "_why": "Disputed divestment of an extractives unit, a regulator investigation into a similarly named entity, an NGO campaign, and an unrelated namesake (Corvane Dental). Most calls should be 'unclear' with staff questions.",
+  "expected_risk_calls": {
+    "Q1": "unclear",
+    "Q2": "unclear",
+    "Q3": "yes",
+    "Q4": "unclear",
+    "Q5": "yes",
+    "Q6": "unclear"
+  },
+  "expected_risk_level": "medium",
+  "expected_risk_level_if_unclear_were_yes": "high",
+  "expected_rejected_doc_ids": [
+    "C7"
+  ],
+  "must_have_status": {
+    "C3": "investigation",
+    "C4": "allegation",
+    "C5": "response"
+  },
+  "fictional": true,
+  "must_find_doc_ids": [
+    "C3",
+    "C8",
+    "C9"
+  ],
+  "expected_issue_status": {
+    "C3": "investigation_opened"
+  },
+  "_fields": "expected_risk_calls: the right call per question. expected_rejected_doc_ids: sources that must be set aside. must_have_status: the right label for key sources. must_find_doc_ids: sources the research must reach (retrieval recall). expected_issue_status: the current status of the issue that contains this source."
+}

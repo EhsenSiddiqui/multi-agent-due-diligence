@@ -1,0 +1,28 @@
+{
+  "case_id": "case_b_northstream",
+  "organisation_name": "Northstream Apparel Inc.",
+  "aliases": [
+    "Northstream"
+  ],
+  "relationship_type": "corporate_donor",
+  "annual_value_usd": 60000,
+  "presence": "national",
+  "brand_affiliation": false,
+  "declared_sectors": [
+    "apparel"
+  ],
+  "countries_of_operation": [
+    "Canada"
+  ],
+  "notes": "FICTIONAL. Proposed cash donation to a hygiene programme.",
+  "fictional": true,
+  "websites": [
+    "northstream-apparel.example"
+  ],
+  "provenance": {
+    "origin": "water_care_staff",
+    "prepared_by": "Relationship lead (fictional demo)",
+    "human_reviewed": true,
+    "note": "Case details entered by Water Care staff about the proposed partnership."
+  }
+}

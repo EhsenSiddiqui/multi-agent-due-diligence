@@ -1,0 +1,309 @@
+{
+  "_provenance": {
+    "origin": "water_care_staff",
+    "prepared_by": "Team Glacier for Water Care",
+    "note": "Known-domains list maintained by Water Care staff."
+  },
+  "_about": "Known source domains -> publisher and source type. Sets the reliability rating via criteria.json. The organisation's own websites come from the case card ('websites'). Unknown domains are typed by the rules in 'fallback_rules', else 'unknown' (low reliability). DEMO ASSUMPTION: a real list would be curated and maintained by WaterAid.",
+  "domains": {
+    "oefa-notices.example": {
+      "publisher": "OEFA (Peru environmental enforcement agency)",
+      "source_type": "regulator"
+    },
+    "ontario-courts.example": {
+      "publisher": "Ontario Court of Justice",
+      "source_type": "court"
+    },
+    "andean-business-review.example": {
+      "publisher": "Andean Business Review",
+      "source_type": "news"
+    },
+    "lima-economic-daily.example": {
+      "publisher": "Lima Economic Daily",
+      "source_type": "news"
+    },
+    "halifax-herald.example": {
+      "publisher": "Halifax Herald",
+      "source_type": "news"
+    },
+    "toronto-business-daily.example": {
+      "publisher": "Toronto Business Daily",
+      "source_type": "news"
+    },
+    "mississauga-local.example": {
+      "publisher": "Mississauga Local Times",
+      "source_type": "news"
+    },
+    "gear-review.example": {
+      "publisher": "Gear Review Weekly",
+      "source_type": "news"
+    },
+    "aguaviva-collective.example": {
+      "publisher": "Agua Viva Collective",
+      "source_type": "ngo"
+    },
+    "cleanthreads-campaign.example": {
+      "publisher": "Clean Threads Campaign",
+      "source_type": "ngo"
+    },
+    "altiplano-resources.example": {
+      "publisher": "Altiplano Resources Inc.",
+      "source_type": "third_party_company"
+    },
+    "reuters.com": {
+      "publisher": "Reuters",
+      "source_type": "news"
+    },
+    "apnews.com": {
+      "publisher": "Associated Press",
+      "source_type": "news"
+    },
+    "bloomberg.com": {
+      "publisher": "Bloomberg",
+      "source_type": "news"
+    },
+    "ft.com": {
+      "publisher": "Financial Times",
+      "source_type": "news"
+    },
+    "wsj.com": {
+      "publisher": "The Wall Street Journal",
+      "source_type": "news"
+    },
+    "nytimes.com": {
+      "publisher": "The New York Times",
+      "source_type": "news"
+    },
+    "theguardian.com": {
+      "publisher": "The Guardian",
+      "source_type": "news"
+    },
+    "bbc.com": {
+      "publisher": "BBC",
+      "source_type": "news"
+    },
+    "bbc.co.uk": {
+      "publisher": "BBC",
+      "source_type": "news"
+    },
+    "theglobeandmail.com": {
+      "publisher": "The Globe and Mail",
+      "source_type": "news"
+    },
+    "cbc.ca": {
+      "publisher": "CBC News",
+      "source_type": "news"
+    },
+    "ctvnews.ca": {
+      "publisher": "CTV News",
+      "source_type": "news"
+    },
+    "financialpost.com": {
+      "publisher": "Financial Post",
+      "source_type": "news"
+    },
+    "thestar.com": {
+      "publisher": "Toronto Star",
+      "source_type": "news"
+    },
+    "cnbc.com": {
+      "publisher": "CNBC",
+      "source_type": "news"
+    },
+    "forbes.com": {
+      "publisher": "Forbes",
+      "source_type": "news"
+    },
+    "aljazeera.com": {
+      "publisher": "Al Jazeera",
+      "source_type": "news"
+    },
+    "mining.com": {
+      "publisher": "MINING.COM",
+      "source_type": "news"
+    },
+    "northernminer.com": {
+      "publisher": "The Northern Miner",
+      "source_type": "news"
+    },
+    "mining-technology.com": {
+      "publisher": "Mining Technology",
+      "source_type": "news"
+    },
+    "businessoffashion.com": {
+      "publisher": "The Business of Fashion",
+      "source_type": "news"
+    },
+    "just-style.com": {
+      "publisher": "Just Style",
+      "source_type": "news"
+    },
+    "voguebusiness.com": {
+      "publisher": "Vogue Business",
+      "source_type": "news"
+    },
+    "thecitizen.co.tz": {
+      "publisher": "The Citizen (Tanzania)",
+      "source_type": "news"
+    },
+    "dawn.com": {
+      "publisher": "Dawn (Pakistan)",
+      "source_type": "news"
+    },
+    "postcourier.com.pg": {
+      "publisher": "Post-Courier (Papua New Guinea)",
+      "source_type": "news"
+    },
+    "business-humanrights.org": {
+      "publisher": "Business & Human Rights Resource Centre",
+      "source_type": "ngo"
+    },
+    "raid-uk.org": {
+      "publisher": "RAID (Rights and Accountability in Development)",
+      "source_type": "ngo"
+    },
+    "hrw.org": {
+      "publisher": "Human Rights Watch",
+      "source_type": "ngo"
+    },
+    "amnesty.org": {
+      "publisher": "Amnesty International",
+      "source_type": "ngo"
+    },
+    "miningwatch.ca": {
+      "publisher": "MiningWatch Canada",
+      "source_type": "ngo"
+    },
+    "earthworks.org": {
+      "publisher": "Earthworks",
+      "source_type": "ngo"
+    },
+    "globalwitness.org": {
+      "publisher": "Global Witness",
+      "source_type": "ngo"
+    },
+    "stand.earth": {
+      "publisher": "Stand.earth",
+      "source_type": "ngo"
+    },
+    "cleanclothes.org": {
+      "publisher": "Clean Clothes Campaign",
+      "source_type": "ngo"
+    },
+    "workersrights.org": {
+      "publisher": "Worker Rights Consortium",
+      "source_type": "ngo"
+    },
+    "remake.world": {
+      "publisher": "Remake",
+      "source_type": "ngo"
+    },
+    "fashionrevolution.org": {
+      "publisher": "Fashion Revolution",
+      "source_type": "ngo"
+    },
+    "knowthechain.org": {
+      "publisher": "KnowTheChain",
+      "source_type": "ngo"
+    },
+    "sec.gov": {
+      "publisher": "U.S. Securities and Exchange Commission (EDGAR)",
+      "source_type": "official_filing"
+    },
+    "sedarplus.ca": {
+      "publisher": "SEDAR+ (Canadian filings)",
+      "source_type": "official_filing"
+    },
+    "justice.gov": {
+      "publisher": "U.S. Department of Justice",
+      "source_type": "regulator"
+    },
+    "competition-bureau.canada.ca": {
+      "publisher": "Competition Bureau Canada",
+      "source_type": "regulator"
+    },
+    "core-ombuds.canada.ca": {
+      "publisher": "Canadian Ombudsperson for Responsible Enterprise",
+      "source_type": "regulator"
+    },
+    "oecdwatch.org": {
+      "publisher": "OECD Watch",
+      "source_type": "ngo"
+    },
+    "courtlistener.com": {
+      "publisher": "CourtListener (court records)",
+      "source_type": "court"
+    },
+    "judiciary.uk": {
+      "publisher": "Courts and Tribunals Judiciary (UK)",
+      "source_type": "court"
+    },
+    "bailii.org": {
+      "publisher": "BAILII (UK and Irish case law)",
+      "source_type": "court"
+    },
+    "canlii.org": {
+      "publisher": "CanLII (Canadian case law)",
+      "source_type": "court"
+    },
+    "opensanctions.org": {
+      "publisher": "OpenSanctions",
+      "source_type": "regulator"
+    },
+    "wikipedia.org": {
+      "publisher": "Wikipedia",
+      "source_type": "blog"
+    }
+  },
+  "own_site_path_rules": [
+    {
+      "contains": [
+        "/news/",
+        "/press/",
+        "statement"
+      ],
+      "source_type": "company_statement"
+    },
+    {
+      "contains": [
+        "report",
+        "annual"
+      ],
+      "source_type": "annual_report"
+    },
+    {
+      "contains": [
+        ""
+      ],
+      "source_type": "company_website"
+    }
+  ],
+  "fallback_rules": [
+    {
+      "domain_contains": [
+        "court",
+        "judiciary",
+        "tribunal"
+      ],
+      "source_type": "court"
+    },
+    {
+      "domain_contains": [
+        ".gov",
+        ".gc.ca",
+        "regulator",
+        "court"
+      ],
+      "source_type": "regulator"
+    },
+    {
+      "domain_contains": [
+        "twitter.",
+        "x.com",
+        "facebook.",
+        "reddit."
+      ],
+      "source_type": "social_media"
+    }
+  ]
+}

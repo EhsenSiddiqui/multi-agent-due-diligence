@@ -1,0 +1,35 @@
+{
+  "case_id": "case_e_lululemon",
+  "organisation_name": "lululemon athletica inc.",
+  "search_name": "lululemon",
+  "aliases": [
+    "Lululemon Athletica Inc.",
+    "lululemon athletica",
+    "Lululemon Athletica",
+    "lululemon",
+    "Lululemon"
+  ],
+  "relationship_type": "corporate_donor",
+  "annual_value_usd": 100000,
+  "presence": "multinational",
+  "brand_affiliation": true,
+  "declared_sectors": [
+    "athletic apparel retail"
+  ],
+  "countries_of_operation": [
+    "Canada",
+    "United States"
+  ],
+  "notes": "REAL ORGANISATION. Relationship details (type, value, brand use) are PLACEHOLDERS for the hackathon: replace them with the organisers' scenario.",
+  "fictional": false,
+  "websites": [
+    "lululemon.com",
+    "lululemon.ca"
+  ],
+  "provenance": {
+    "origin": "water_care_staff",
+    "prepared_by": "Team Glacier (hackathon placeholder case card)",
+    "human_reviewed": true,
+    "note": "Organisation identity entered by the team; relationship details are placeholders."
+  }
+}

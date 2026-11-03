@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments (any name)
+.venv/
+venv/
+.water-hack/
+.v/
+
+# Secrets: never commit API keys
+.env
+*.env
+.env.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Generated results (re-create with: python -m a5dd.pipeline --all --rules).
+# A sample report is kept in docs/sample/.
+results/*
+!results/README.md
+
+# Challenge materials are not ours to redistribute: download them separately (see data/manual/README.md)
+data/manual/*
+!data/manual/README.md
